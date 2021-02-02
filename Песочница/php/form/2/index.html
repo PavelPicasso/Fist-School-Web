@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Анкета</h2>
+    <form action="input.php" method="POST">
+        <label for="firstname">Введите имя:</label><br> 
+        <input type="text" name="firstname" />
+        
+        <p>Форма обучения:</p>
+        <input type="radio" id="full-time" name="eduform" value="очно"/>
+        <label for="full-time">очно</label>
+        <br>
+        <input type="radio" id="no-full-time" name="eduform" value="заочно"/>
+        <label for="no-full-time">заочно</label>
+        
+        <p>Требуется общежитие:</p>
+        <input type="checkbox" id="house" name="hostel"/>
+        <label for="house">Да</label>
+        
+        <p>Выберите курсы (используя ctrl для ножественного выбора):</p>
+        <select name="courses[]" size="5" multiple>
+            <option value="ASP.NET">ASP.NET</option>
+            <option value="PHP">PHP</option>
+            <option value="Ruby">RUBY</option>
+            <option value="Python">Python</option>
+            <option value="Java">Java</option>
+        </select>
+
+        <p>
+            <label for="comment">Краткий комментарий:</label><br> 
+            <textarea id="comment" name="comment" maxlength="200"></textarea>
+        </p>
+
+        <input type="submit" value="Отправить">
+    </form>
+</body>
+</html>

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Тег</title>
+    <link rel="stylesheet" href="сss/style.css">
+</head>
+
+<body>
+    <h2>Теги</h2>
+    <ul class="guide">
+      <li>
+        <a href="https://webref.ru/html" target="__blank">Справочник HTML</a>
+      </li>
+      
+      <li>
+        <a href="https://webref.ru/css" target="__blank">Справочник CSS</a>
+      </li>
+    </ul>
+
+    <h1>Заголовок 1</h1>
+    <h2>Заголовок 2</h2>
+    <h3>Заголовок 3</h3>
+    <h4>Заголовок 4</h4>
+    <h5>Заголовок 5</h5>
+    <h6>Заголовок 6</h6>
+
+    <h2>Тег p</h2>
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi adipisci eveniet ipsa impedit non, corrupti quia sunt nesciunt laudantium iste debitis sed quidem ducimus placeat hic, harum suscipit illo omnis?
+    </p>
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi adipisci eveniet ipsa impedit non, corrupti quia sunt nesciunt laudantium iste debitis sed quidem ducimus placeat hic, harum suscipit illo omnis?
+    </p>
+
+    <h2>Тег span</h2>
+    <span>Span1</span>
+    <span>Span2</span>
+
+    <h2>Тег img</h2>
+    <img src="img/image.png" alt="100x100">
+
+    <h2>Тег a</h2>
+    <a href="https://yandex.ru/">Ссылка без редиректа</a>
+    <a href="https://yandex.ru/" target="__blank">Ссылка с редиректом</a>
+    <a href="nextPage.html">Ссылка другую страницу</a>
+
+    <h2>Список</h2>
+    <ul>
+        <li>Пункт1</li>
+        <li>Пункт2</li>
+    </ul>
+
+    <h2>Список select</h2>
+    <label for="phone">Выберите модель:</label>  
+    <select id="phone" name="phone">
+      <option value="iphone 6s">iPhone 6S</option>
+      <option value="lumia 950">Lumia 950</option>
+      <option value="nexus 5x">Nexus 5X</option>
+      <option value="galaxy s7" selected>Galaxy S7</option>
+    </select>
+
+    <p>
+      Внутрь элемента select помещаются элементы option - элементы списка.
+      Каждый элемент option содержит атрибут value, который хранит значение элемента.
+      При этом значение элемента option не обязательно должно совпадать с отображаемым им текстом.
+      С помощью атрибута selected мы можем установить выбранный по умолчанию элемент - это необязательно должен быть первый элемент в списке.
+    </p>
+
+    <h2>С<sub>n</sub></h2>
+
+    <h2>Div - контейнер</h2>
+    <div class="green"></div>
+
+    <div class="test1">
+      <h2>Заголовок контейнера Div с классом test1</h2>
+
+      <p>
+        Абзац контейнер Div с классом test1
+      </p>
+
+      <div class="test2">
+        <h2>Заголовок контейнера Div с классом test2</h2>
+
+        <p>
+          Абзац контейнер Div с классом test2
+        </p>
+      </div>
+
+      <p>
+        Абзац контейнер Div с классом test1
+      </p>
+    </div>
+
+
+    <h2>Position</h2>
+    <div>
+      <img src="https://webref.ru/assets/images/position/relative-absolute-1.png" alt="">
+      <h2>Text</h2>
+    </div>
+</body>
+
+</html>

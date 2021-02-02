@@ -1,0 +1,221 @@
+.about, .portfolio, .contact, .contact-me {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.contact-me-description, .about-description {
+    columns: 1;
+    margin: 0;
+    padding: 30px;
+    border: 1px solid #fd5a54;
+    border-radius: 5px;
+}
+
+.contact-me-description li , .about-description li {
+    color: #9199a6;
+    font-weight: 500;
+    padding: 8px;
+}
+
+.contact-me-description span, .about-description span {
+    text-transform: uppercase;
+    color: #fff;
+}
+
+#about, #portfolio, #contact {
+    border-bottom: 1px solid rgba(255,255,255,.25);
+}
+
+.section-title {
+    display: flex;
+    flex-direction: column;
+}
+
+/*
+    Landing Page
+*/
+
+.background {
+    display: flex;
+    background-image: url('../img/mountains-dark-simple-background.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.person {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    align-items: center;
+    justify-content: center;
+}
+
+.person img {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    border: 5px solid rgb(0 0 0 / 0.1);
+}
+
+.person h2 {
+    color: #fd5a54;
+    font-size: 48px;
+    letter-spacing: 2px;
+    font-weight: 500;
+}
+
+.person span {
+    color: #fff;
+    letter-spacing: 1px;
+    font-size: 18px;
+}
+
+/*
+    About Me
+*/
+
+.about img {
+    max-width: 40%;
+    border: 5px solid rgb(0 0 0 / 0.1);
+}
+
+.about-info h1 {
+    font-size: 32px;
+    font-weight: 500;
+    margin: 0px 0px 60px;
+}
+
+.about-info h1 span {
+    border-bottom: 1px solid #fff;
+    padding-bottom: 10px;
+}
+
+.about-info p {
+    color: #a9b1b5;
+}
+
+.about-info {
+    display: flex;
+    flex-direction: column;
+    margin: 0 30px;
+}
+
+.about-info .about-description {
+    columns: 2;
+    padding: 20px 15px;
+}
+
+/*
+    policy.html
+*/
+
+.privacy-policy {
+    padding: 100px 0;
+    color: #fff;
+}
+
+.section-title h1 {
+    margin: 0;
+    margin-bottom: 24px;
+    font-size: 50px;
+}
+
+.section-title h5 {
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 500;
+    color: #899093;
+}
+
+/*
+    Contact
+*/
+
+address {
+    margin-top: 75px;
+}
+
+.sub-title {
+    display: block;
+    color: #899093;
+    font-size: 18px;
+}
+
+.emails {
+    padding: 0;
+}
+
+.emails li {
+    margin: 0 0 16px;
+}
+
+.email {
+    background: url(../img/social/paper-plane.svg) no-repeat;
+    background-position: left;
+    background-size: 18px;
+    padding-left: 25px;
+    color: #fff;
+    font-size: 18px;
+    text-decoration: underline;
+}
+
+.post-image {
+    max-width: 40%;
+}
+
+/*
+    Contact Form
+*/
+
+.contact-me-info .contact-me-description {
+    height: 370px;
+}
+
+.contact-form {
+    border: 1px solid #fd5a54;
+    padding: 30px;
+    border-radius: 5px;
+    height: 370px;
+}
+
+input, textarea {
+    font-size: 16px;
+    height: 50px;
+    width: 100%;
+    color: #eee;
+    margin-bottom: 30px;
+    padding: 0;
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid rgba(255,255,255,.07);
+    resize: none;
+    outline: 0;
+    border-radius: 0;
+    transition: all .3s ease 0s;
+}
+
+textarea {
+    height: 120px;
+    padding: 0;
+    padding-top: 15px;
+}
+
+input:focus::placeholder, textarea:focus::placeholder {
+    color: #fff;
+}
+
+input:focus, textarea:focus, button:focus {
+    color: #fff;
+    border-bottom: 1px solid #fd5a54;
+}
+
+.author {
+    margin-top: 50px;
+}
+
+.author h2 {
+    font-style: italic;
+}

@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="utf-8" />
+    <title>Jquery</title>
+    <link rel="shortcut icon" href="img/jquery-logo.png" type="image/x-icon">
+    <link href="css/custom.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="modal">
+        <div class="modal-window">
+            <h2>
+                Modal window
+                <span class="close">X</span>
+            </h2>
+            
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Fugiat adipisci suscipit quaerat ipsum enim distinctio dolor,
+                ducimus similique, ut accusantium doloremque soluta eveniet quo
+                temporibus debitis nemo quae voluptates optio!
+            </p>
+        </div>
+    </div>
+
+    <div class="container">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        Fugiat adipisci suscipit quaerat ipsum enim distinctio dolor,
+        ducimus similique, ut accusantium doloremque soluta eveniet quo
+        temporibus debitis nemo quae voluptates optio!
+    </div>
+
+    <h2>В textarea запрещено вводить сомволы, кроме чисел</h2>
+    <textarea name="textarea" id="" cols="30" rows="10"></textarea>
+
+    <button class="changeColor">Сменить цвец текста контейнера</button>
+
+    <h2>Добавление и удаление классов</h2>
+    <p class="red">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        Fugiat adipisci suscipit quaerat ipsum enim distinctio dolor,
+        ducimus similique, ut accusantium doloremque soluta eveniet quo
+        temporibus debitis nemo quae voluptates optio!
+    </p>
+
+    <p class="text">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        Fugiat adipisci suscipit quaerat ipsum enim distinctio dolor,
+        ducimus similique, ut accusantium doloremque soluta eveniet quo
+        temporibus debitis nemo quae voluptates optio!
+    </p>
+    <button class="button">Удалить/Добавить класс</button>
+
+    <h2>Скрытие и показ элементов</h2>
+
+    <p class="show">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        Fugiat adipisci suscipit quaerat ipsum enim distinctio dolor,
+        ducimus similique, ut accusantium doloremque soluta eveniet quo
+        temporibus debitis nemo quae voluptates optio!
+    </p>
+    <button class="changeDisplay">Показать/Скрыть</button>
+
+
+    <h2>Сбор элементов (each) и обращение к родителям и детям (parent/parents/children)</h2>
+    <div class="content">
+        <p>
+            При нажании на <b>текст</b>, выделится родитель нажатого текста - <span class="red">Красным</span>.
+        </p>
+
+        <p>
+            При нажатии на <b>текст Like</b>, выделятся дети нажатого текста Like - <span class="green">Зеленым</span>.
+        </p>
+
+        <ul class="news">
+            <li class="elem-news">
+                <p class="news-text">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Fugiat adipisci suscipit quaerat ipsum enim distinctio dolor,
+                    ducimus similique, ut accusantium doloremque soluta eveniet quo
+                    temporibus debitis nemo quae voluptates optio!
+                </p>
+                <span class="like">
+                    Like: 
+                    <span class="count">11</span>
+                </span>
+            </li>
+
+            <li class="elem-news">
+                <p class="news-text">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Fugiat adipisci suscipit quaerat ipsum enim distinctio dolor,
+                    ducimus similique, ut accusantium doloremque soluta eveniet quo
+                    temporibus debitis nemo quae voluptates optio!
+                </p>
+                <span class="like">
+                    Like: 
+                    <span class="count">22</span>
+                </span>
+            </li>
+
+            <li class="elem-news">
+                <p class="news-text">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Fugiat adipisci suscipit quaerat ipsum enim distinctio dolor,
+                    ducimus similique, ut accusantium doloremque soluta eveniet quo
+                    temporibus debitis nemo quae voluptates optio!
+                </p>
+                <span class="like">
+                    Like: 
+                    <span class="count">44</span>
+                </span>
+            </li>
+        </ul>
+
+        <button class="getCount">Собрать все значение</button>
+    </div>
+
+    <h2>Работа с DOM, изменение, добавление и удаление элементов</h2>
+
+    <ul  class="list">
+        <li class="list-text">
+            Какой-то текст
+        </li>
+
+        <li class="list-text">
+            UX — это User Experience (дословно: «опыт пользователя»).
+            То есть это то, какой опыт/впечатление получает пользователь от работы с вашим интерфейсом.
+            Удается ли ему достичь цели и на сколько просто или сложно это сделать.
+        </li>
+
+        <li class="list-text">
+            А UI — это User Interface (дословно «пользовательский интерфейс») — то,
+            как выглядит интерфейс и то, какие физические характеристики приобретает.
+            Определяет, какого цвета будет ваше «изделие», удобно ли будет человеку попадать
+            пальцем в кнопочки, читабельным ли будет текст и тому подобное…
+        </li>
+    </ul>
+
+    <button class="change-first-news">Изменить первую новость</button>
+    <button class="add-news-end">Добавить новость в конец</button>
+    <button class="add-news-first">Добавить новость в вначло</button>
+
+
+    <h2>Модальное окно</h2>
+    <button class="open-modal">Открыть одальное окно</button>
+
+    <h2>Выпадающее меню</h2>
+    <p>
+        <b>Вариант 1</b>
+    </p>
+
+    <ul class="menu_down">
+        <li>
+            <a href="#">Меню 01</a>
+        </li>
+
+        <li>
+            <a href="#">Меню 02</a>
+            <ul>
+                <li><a href="#">Ссылка 01</a></li>
+                <li><a href="#">Ссылка 02</a></li>
+                <li><a href="#">Ссылка 03</a></li>
+            </ul>
+        </li>
+
+        <li><a href="#">Меню 03</a>
+            <ul>
+                <li><a href="#">Ссылка 04</a></li>
+                <li><a href="#">Ссылка 05</a></li>
+            </ul>
+        </li>
+
+        <li>
+            <a href="#">Меню 04</a>
+        </li>
+    </ul>
+    
+    <p>
+        <b>Вариант 2</b>
+    </p>
+    
+    <ul id="menudown">
+        <li>
+            <a href="#">Меню 01</a>
+        </li>
+
+        <li>
+            <ul class="menudown2">
+                <li>
+                    <a href="#">Ссылка 01</a>
+                </li>
+
+                <li>
+                    <a href="#">Ссылка 02</a>
+                </li>
+
+                <li>
+                    <a href="#">Ссылка 03</a>
+                </li>
+            </ul>
+            
+            <a href="#">Меню 02 -></a></li>
+        <li>
+            <ul class="menudown2">
+                <li>
+                    <a href="#">Ссылка 04</a>
+                </li>
+
+                <li>
+                    <a href="#">Ссылка 05</a>
+                </li>
+
+                <li>
+                    <ul class="menudown3">
+                        <li>
+                            <a href="#">Ссылка 13</a>
+                        </li>
+
+                        <li>
+                            <a href="#">Ссылка 14</a>
+                        </li>
+                    </ul>
+
+                    <a href="#">Ссылка 06 -></a>
+                </li>
+
+                <li>
+                    <a href="#">Ссылка 07</a>
+                </li>
+            </ul>
+            
+            <a href="#">Меню 03 -></a>
+        </li>
+
+        <li>
+            <a href="#">Меню 04</a>
+        </li>
+    </ul>
+    
+
+    <p>
+        <b>Вариант 3</b>
+    </p>
+
+    <ul id="menu_slide">
+        <li>
+            <a href="">Меню 01</a>
+        </li>
+
+        <li>
+            <a href="">Меню 02 -></a>
+
+            <ul class="menu_slide">
+                <li>
+                    <a href="#">Ссылка 01</a>
+                </li>
+
+                <li>
+                    <a href="#">Ссылка 02</a> 
+                </li>
+
+                <li>
+                    <a href="#">Ссылка 03</a>
+                </li>
+            </ul>
+        </li>
+
+        <li>
+            <a href="">Меню 03 -></a>
+
+            <ul class="menu_slide">
+                <li>
+                    <a href="#">Ссылка 04</a>
+                </li>
+
+                <li>
+                    <a href="#">Ссылка 05</a>
+                </li>
+
+                <li>
+                    <a href="#">Ссылка 06</a> 
+                </li>
+
+                <li>
+                    <a href="#">Ссылка 07</a>
+                </li>
+            </ul>
+        </li>
+
+        <li>
+            <a href="">Меню 04</a>
+        </li>
+    </ul>    
+
+    <h2>Галерея</h2>
+    <p>
+        <b>Вариант 1</b>
+    </p>
+
+    <div class="viewport">
+        <ul class="slider">
+            <li class="slide">
+                <img src="./img/bled-1899264_1280.jpg" alt="">
+            </li>
+
+            <li class="slide">
+                <img src="./img/cat-1455468_1280.jpg" alt="">
+            </li>
+
+            <li class="slide">
+                <img src="./img/france-2773030_1280.jpg" alt="">
+            </li>
+
+            <li class="slide">
+                <img src="./img/portrait-1462944_1280.jpg" alt="">
+            </li>
+
+            <li class="slide">
+                <img src="./img/woman-1948939_1280.jpg" alt="">
+            </li>
+        </ul>
+    </div>
+
+    <div class="dots">
+        <div class="dot active"></div>
+        <div class="dot"></div>
+        <div class="dot"></div>
+        <div class="dot"></div>
+        <div class="dot"></div>
+    </div>
+
+    <button class="prev" >Назад</button>
+    <button class="next">Вперёд</button>
+
+    
+    <p>
+        <b>Вариант 2</b>
+    </p>
+
+    <div class="gallery">
+        <img class="g-slide" src="./img/bled-1899264_1280.jpg" alt="">
+    </div>
+
+    <button class="prev-v2" >Назад</button>
+    <button class="next-v2">Вперёд</button>
+
+    <h2>Таймер на jQuery</h2>
+
+    <button class="run-timer">Пуск</button>
+
+    <div class="timer-container">
+        <p class="timer">Осталось: <b class="time"></b></p>
+    </div>
+
+
+    <!-- Подключение все скриптов происходит ЗДЕСЬ, ВНИЗУ BODY
+    Это делается для того чтобы пользователь, когда заходил видел сразу сайт, и после чего было только подгрузка скриптов по работе с сайтом -->
+    <script src="./js/jquery-3.5.1.min.js"></script>
+    <script src="./js/index.js"></script>
+</body>
+
+</html>

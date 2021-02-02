@@ -1,0 +1,38 @@
+.guide {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.guide li {
+    margin-bottom: 8px;
+    width: 200px;
+}
+
+.guide li a{
+    display: block;
+    padding: 9px;
+    border: 3px solid #cadfcf;
+    border-radius: 4px;
+    text-decoration: none;
+}
+
+.guide li a:hover {
+    color: #fff;
+    background-color: #000;
+}
+
+.green {
+    display: block;
+    height: 100px;
+    width: 100px;
+    background-color: rgb(0, 255, 0);
+}
+
+.test1 {
+    background-color: rgb(140, 140, 140);
+}
+
+.test2 {
+    background-color: rgb(255, 255, 0);
+}
