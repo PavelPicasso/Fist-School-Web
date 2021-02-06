@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="css/header.css">
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/footer.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 
 <body>
@@ -65,12 +66,12 @@
         <div id="person" class="container background">
             <div class="person">
                 <img src="img/unnamed.jpg" alt="profile">
-                <h2>Razan Smith</h2>
-                <span>A Create Freelancer & Full Stack Developer</span>
+                <h2 data-aos="fade-up">Razan Smith</h2>
+                <span data-aos="fade-up">A Create Freelancer & Full Stack Developer</span>
             </div>
         </div>
 
-        <div id="about">
+        <div id="about" data-aos="fade-right">
             <div class="fixed-container container about">
                 <img src="img/unnamed.jpg" alt="profile">
                 
@@ -333,6 +334,10 @@
 
     <script src="./js/jquery-3.5.1.min.js"></script>
     <script src="./js/index.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 
 </html>
