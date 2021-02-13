@@ -15,12 +15,15 @@
         4 бесконечность
         5 как наша аниация работает (linear, ease... и тд.)
     */
-    animation: rotate 1s 0s infinite linear;
+    animation: rotate 5s 0s infinite linear;
 }
 
 @keyframes rotate {
     0% {
         transform: rotate(0);
+    }
+    50% {
+        border-top-color: rgb(189, 33, 33);
     }
     100% {
         transform: rotate(360deg);
