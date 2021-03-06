@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Sigmar+One&display=swap');
+
+body {
+    font-family: 'Sigmar One', cursive;
+    display: flex;
+    min-height: 100vh;
+    margin: 0;
+    background: #000;
+    color: #fff;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    align-items: center;
+    justify-content: center;
+}
+
+h1, h2 {
+    background: url(../img/error.jpg);
+    font-size: 150px;
+    margin: 0;
+    color: transparent;
+    -webkit-background-clip: text;
+
+    animation: animete 10s 0s infinite ease-in-out;
+}
+
+@keyframes animete {
+    from {
+        background-position: 0 0;
+    }
+    to {
+        background-position: 100% 100%;
+    }
+}
