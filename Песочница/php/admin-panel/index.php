@@ -14,9 +14,9 @@ require 'controller/user.php';
 
 // Данные с формы
 $data = array (
-    "username" => "test",
-    "password" => "test",
-    "re-password" => "test"
+    "username" => "qwerty",
+    "password" => "qwerty",
+    "re-password" => "qwerty"
 );
 
 $user = new User($data["username"], $data["password"], $data["re-password"]);
@@ -26,4 +26,16 @@ if($result) {
 } else {
     echo "Неверный логин или пароль!";
 }
+
+// $result = $user->SignUp();
+
+// if($result === 0) {
+//     echo "не совподают пароли";
+// } elseif($result === 1) {
+//     echo "такой пользователь существует";
+// } elseif($result === 2) {
+//     echo "ошибка при создании"; 
+// } elseif($result === true) {
+//     echo "Зарегестрированы";
+// }
 ?>
