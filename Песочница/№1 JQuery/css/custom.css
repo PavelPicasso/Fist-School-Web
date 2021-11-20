@@ -1,0 +1,174 @@
+body {
+	padding: 0;
+    margin: 0;
+    margin-bottom: 40px;
+	height: 100%;
+	width: 100%;
+}
+
+a {
+	text-decoration: none;
+}
+
+ul {
+	list-style: none;
+}
+
+/*
+    Сменить цвец текста контейнера
+*/
+
+.container {
+	width: 500px;
+	font-size: 18px;
+}
+
+/*
+    В textarea запрещено вводить сомволы, кроме чисел
+*/
+
+textarea {
+	display: block;
+	margin: 15px;
+	resize: none;
+}
+
+
+/*
+    Сбор элементов (each) и обращение к родителям и детям (parent/parents/children)
+*/
+
+button {
+	margin: 15px;
+	padding: 5px 10px;
+}
+
+.red {
+	color: rgb(255, 0, 0);
+}
+
+.blue {
+	color: rgb(0, 0, 255);
+}
+
+.green {
+	color: rgb(0, 255, 0);
+}
+
+.news-text, .like {
+	cursor: pointer;
+}
+
+.list-text {
+	padding: 8px;
+	margin-bottom: 8px;
+}
+
+ /*
+    Модальное окно
+*/
+
+.modal {
+	display: none;
+	height: 100%;
+	width: 100%;
+	position: fixed;
+	background-color: rgb(0 0 0 / 0.5);
+	z-index: 10;
+}
+
+.modal-window {
+	display: flex;
+    flex-direction: column;
+    justify-content: center;
+	align-items: center;
+	width: 500px;
+	padding: 25px;
+	margin: 0 auto;
+	margin-top: 25px;
+    background-color: #fff;
+    
+}
+
+.close {
+	cursor: pointer;
+	color: #5c5858;
+}
+
+/*
+    Галерея пример 1
+*/
+
+.viewport {
+    width: 100%;
+    height: 450px;
+    overflow: hidden;
+}
+
+.slider {
+    position: relative;
+    width: 500%;
+    height: 450px; 
+    display: flex;
+    justify-content: start;
+    padding: 0;
+}
+
+.slide {
+    width: 100%;
+    height: 450px;
+}
+
+.slide img {
+    width: 100%;
+    height: 450px;
+    object-fit: cover;
+}
+
+.dots {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 16px;
+}
+
+.dot {
+    width: 10px;
+    height: 10px;
+    margin-right: 8px;
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 50%;
+    transition: 0.3s opacity ease-in-out;
+}
+
+.active {
+    background: #000;
+}
+
+ /*
+    Галерея пример 2
+*/
+
+.gallery {
+    width: 100%;
+    height: 600px;
+}
+
+.gallery img {
+    width: 100%;
+    height: 600px;
+}
+
+
+/*
+    Таймер на jQuery
+*/
+
+.timer-container {
+    display: none;
+}
+
+.timer-container {
+    margin: 15px;
+}

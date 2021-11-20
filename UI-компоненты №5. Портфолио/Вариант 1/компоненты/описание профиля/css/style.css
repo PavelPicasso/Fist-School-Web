@@ -1,0 +1,64 @@
+body {
+    font-family: 'Roboto', 'Noto', sans-serif;
+    line-height: 1.5;
+    background-color: #16161a;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+
+.profile {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 40px;
+}
+
+.profile img {
+    height: 400px;
+    width: 400px;
+    border: 5px solid #1f202f;
+}
+
+.profile h2 {
+    font-size: 32px;
+    color:#fff;
+}
+
+.profile h2 span {
+    border-bottom: 1px solid red;
+    padding-bottom: 10px;
+}
+
+.profile p {
+    color: #a9b1b5;
+    margin: 30px 0;
+}
+
+.description {
+    display: flex;
+    flex-direction: column;
+    margin: 0 30px;
+}
+
+.description ul {
+    columns: 2;
+    padding: 20px 15px;
+    border: 1px solid red;
+    border-radius: 5px;
+}
+
+.description ul li {
+    color: #9199a6;
+    padding: 8px;
+}
+
+.description ul span {
+    color: #fff;
+}
