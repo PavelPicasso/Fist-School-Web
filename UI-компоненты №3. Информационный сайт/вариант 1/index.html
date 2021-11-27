@@ -1,34 +1,82 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Site</title>
+    <title>Информационный сайт</title>
 
     <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/init.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
     <header>
-        <h1>Логотип</h1>
+        <div class="fixed-container cap">
+            <a href="#">Логотип</a>
 
-        <nav>
-            <ul>
-                <li><a href="#">Главная</a></li>
-                <li><a href="#">Услуги</a></li>
-                <li><a href="#">О нас</a></li>
-                <li><a href="#">Контакты</a></li>
-            </ul>
-        </nav>
+            <nav>
+                <ul class="navigation">
+                    <li><a href="#">Главная</a></li>
+                    <li><a href="#">Услуги</a></li>
+                    <li><a href="#">О нас</a></li>
+                    <li><a href="#">Контакты</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
 
-    <!--
-        В main вам нужно реализовать:
-        - Главный заголовок сайта, его описание и кнопку
-    -->
     <main>
-        
+        <section class="into">
+            <div class="fixed-container">
+                <h1>Главный заголовок сайта</h1>
+                <p>И описание сайта, конечно же</p>
+            </div>
+        </section>
+
+        <section class="fixed-container">
+            <h2>Услуги</h2>
+
+            <ul class="services">
+                <li>
+                    <img src="https://cdn-icons.flaticon.com/png/512/3018/premium/3018422.png?token=exp=1638030213~hmac=779541aaf65dde65f2a27c95c264b88d" alt="Layers">
+                    <h3>Lorem ipsum dolor</h3>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Exercitationem, quia asperiores qui quisquam nulla similique modi!</p>
+                </li>
+                <li>
+                    <img src="https://cdn-icons-png.flaticon.com/512/831/831337.png" alt="Music  free icon">
+                    <h3>Lorem ipsum dolor</h3>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Exercitationem, quia asperiores!</p>
+                </li>
+                <li>
+                    <img src="https://cdn-icons.flaticon.com/png/512/3018/premium/3018422.png?token=exp=1638030213~hmac=779541aaf65dde65f2a27c95c264b88d" alt="Layers">
+                    <h3>Lorem ipsum dolor</h3>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Exercitationem, quia asperiores qui quisquam nulla similique modi!</p>
+                </li>
+                <li>
+                    <img src="https://cdn-icons-png.flaticon.com/512/831/831337.png" alt="Music  free icon">
+                    <h3>Lorem ipsum dolor</h3>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Exercitationem, quia asperiores!</p>
+                </li>
+            </ul>
+        </section>
+
+        <section class="about">
+            <div class="fixed-container">
+                <h2>О нас</h2>
+
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestias reprehenderit molestiae animi beatae dolores vero impedit. Quos ipsam sed perspiciatis animi, quibusdam, perferendis reprehenderit, alias quia cupiditate quis eum labore.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat tenetur magni, aliquam minus ducimus debitis labore, dolorum, dignissimos eligendi officia error nulla. Quos iste, assumenda voluptate in quaerat quisquam necessitatibus.</p>
+            </div>
+        </section>
     </main>
+
+    <footer>
+        <div class="fixed-container">
+            <p class="copyright">© Информационный сайт, 2021 все права защищены</p>
+        </div>
+    </footer>
 </body>
 </html>
