@@ -118,6 +118,40 @@ nav {
 }
 
 
+.feedback {
+    background-color: #000000;
+}
+
+.feedback h2 {
+    color: #fff;
+}
+
+.info {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form input {
+    margin: 15px 0;
+}
+
+form textarea {
+    width: 350px;
+    padding-left: 5px;
+    resize: none;
+}
+
+.btn {
+    width: 150px;
+}
+
 /*
     footer
 */
@@ -128,4 +162,11 @@ footer {
 
 .copyright {
     text-align: center;
+}
+
+
+@media (max-width: 900px) {
+    .services {
+        justify-content: center;
+    }
 }

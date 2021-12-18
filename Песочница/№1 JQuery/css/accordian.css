@@ -1,0 +1,55 @@
+body{
+	max-width: 1200px;
+	margin: 0 auto;
+	background-color: lightgrey;
+}
+
+.question {
+    background-color: grey;
+    color: black;
+    position: relative;
+    margin-top: 20px;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.title {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+}
+
+.title h4{
+	margin: 0;
+	padding: 5px;
+}
+
+.answer {
+    background-color: #fff;
+    display: none;
+    border-radius: 10px;
+}
+
+.answer p {
+    margin: 0;
+    padding: 25px;
+    text-align: justify;
+}
+
+.answer p:nth-child(2) {
+    padding-top: 0px;
+}
+
+.arrow {
+    background-image: url(https://png.pngtree.com/svg/20160818/78287d069c.svg);
+    width: 20px;
+    height: 20px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+.arrow-active{
+	transform: rotate(180deg);
+}
