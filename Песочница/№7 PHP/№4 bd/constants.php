@@ -6,7 +6,7 @@
     // define("DB_NAME", "users");
 
     $host = 'localhost'; // адрес сервера 
-    $database = 'users'; // имя базы данных
+    $database = 'extest'; // имя базы данных
     $user = 'root'; // имя пользователя
     $password = ''; // пароль
 ?>

@@ -46,4 +46,7 @@
 
     $input = '<h1>Header</h1>';
     echo $input . strip_tags($input) . "<br>";
+	
+    echo "<br><a href=\"https://metanit.com/php/tutorial/4.1.php\">Работа со строками</a><br>";
+    echo "<a href=\"https://www.php.net/manual/ru/ref.strings.php\">Все функции строк</a>";
 ?>

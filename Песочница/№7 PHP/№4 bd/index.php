@@ -1,5 +1,28 @@
 <?php
     require 'constants.php';
+
+    // подключаемся к серверу
+    $link = mysqli_connect($host, $user, $password, $database);
+    if (!$link){
+        echo "<p>Ошибка: Невозможно подключиться к MySQL " . mysqli_connect_error() . "</p>";
+        return 0;
+    }
+    else {
+        echo "<p>Соединение установлено успешно</p>";
+    }
+
+
+    function query($link, $sql) {
+        $result = mysqli_query($link, $sql);
+
+        if (!$result) {
+            echo "<p>Произошла ошибка при выполнении запроса</p>";
+        } {
+            echo "<p>Запрос выполненен успешно</p>";
+        }
+
+        return $result;
+    }
 ?>
 
 <!DOCTYPE html>
@@ -15,33 +38,20 @@
     <h1>Работа с MySQL в PHP</h1>
     
     <?php
-        // подключаемся к серверу
-        $link = mysqli_connect($host, $user, $password, $database);
-
-        if (!$link){
-            echo "<p>Ошибка: Невозможно подключиться к MySQL " . mysqli_connect_error() . "</p>";
-        }
-        else {
-            echo "<p>Соединение установлено успешно</p>";
-        }
-
+        
         // выполняем операции с базой данных
         $sql = "SELECT * FROM users"; // выбираем всех в таблице users
-        $result = mysqli_query($link, $sql);
+        $result = query($link, $sql);
 
-        if (!$result) {
-            echo "<p>Произошла ошибка при выполнении запроса</p>";
-        }
-        else {
+        if ($result != 0) {
             $rows = mysqli_num_rows($result); // количество полученных строк
             echo "<p>количество полученных строк = " . $rows . "</p>";
 
             echo "<table>
                     <tr>
-                        <th>Id</th>
-                        <th>first_name</th>
-                        <th>last_name</th>
-                        <th>middle_name</th>
+                        <th>id</th>
+                        <th>username</th>
+                        <th>password</th>
                     </tr>"
             ;
             for ($i = 0; $i < $rows; $i++) {
@@ -58,7 +68,7 @@
             // mysqli_free_result($result); // очистка
         }
 
-        $sql = "SELECT * FROM users Where `first_name` = 'test'"; // выбираем всех в таблице users
+        $sql = "SELECT * FROM users Where `username` = 'test'"; // выбираем из всей таблице users одного
         $result = mysqli_query($link, $sql);
 
         if (!$result) {
@@ -68,10 +78,10 @@
             $data = mysqli_fetch_row($result);
             echo "
                 <ul>
+                    <li><b>Нашли одного конкретного</b></li>
                     <li><b>id</b> $data[0]</li>
-                    <li><b>first_name</b> $data[1]</li>
-                    <li><b>last_name</b> $data[2]</li>
-                    <li><b>middle_name</b> $data[3]</li>
+                    <li><b>username</b> $data[1]</li>
+                    <li><b>password</b> $data[2]</li>
                 </ul>
             ";
             
