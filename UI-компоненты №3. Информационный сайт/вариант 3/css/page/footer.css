@@ -1,0 +1,104 @@
+.footer {
+    background-color: #111111;
+}
+
+.footer-top {
+    height: 55px;
+    border-bottom: #1a1a1a solid 2px;
+}
+
+.footer-top ul {
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-left: 140px;
+}
+
+.footer-top .social-item {
+    margin-right: 24px;
+}
+
+.social-item a {
+    display: block;
+    height: 32px;
+    width: 32px;
+    background-size: 32px;
+    color: #999;
+    opacity: 0.6;
+}
+
+.social-item a:hover {
+    opacity: 1;
+}
+
+.social-item:nth-child(1) a {
+    background-image: url(../../img/social/facebook.png);
+}
+
+.social-item:nth-child(2) a {
+    background-image: url(../../img/social/twitter.png);
+}
+
+.social-item:nth-child(3) a {
+    background-image: url(../../img/social/youtube.png);
+}
+
+.social-item:nth-child(4) a {
+    background-image: url(../../img/social/instagram.png);
+}
+
+.social-item:nth-child(5) a {
+    background-image: url(../../img/social/discord.png);
+}
+
+.social-item:nth-child(6) a {
+    background-image: url(../../img/social/reddit.png);
+}
+
+.social-item:nth-child(7) a {
+    background-image: url(../../img/social/vk.png);
+}
+
+.social-item:nth-child(8) a {
+    background-image: url(../../img/social/hoyolab.png);
+}
+
+.footer-main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px 0 40px;
+    background-color: #000;
+    color: #919191;
+    font-size: 12px;
+}
+
+.footer-main ul {
+    display: flex;
+    flex-direction: row;
+}
+
+.footer-main ul li {
+    margin: 10px;
+}
+
+.footer-main ul li:hover {
+    color: rgb(236, 220, 220);
+}
+
+.footer-main p {
+    line-height: 1.6;
+    text-align: center;
+}
+
+.hoyoverse {
+    width: 200px;
+    height: 36px;
+    margin: 10px 0;
+}
+
+.copyright {
+    color: #fff;
+    font-size: 12px;
+}

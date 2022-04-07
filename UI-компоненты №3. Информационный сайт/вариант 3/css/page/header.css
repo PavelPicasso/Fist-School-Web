@@ -1,0 +1,131 @@
+.mobile-modal-menu {
+    display: none;
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    background-color: #fff;
+    z-index: 15;
+    transition: .3s ease all;
+}
+
+.modal-menu {
+    display: flex;
+    flex-direction: column;
+}
+
+.container-close {
+    display: flex;
+    justify-content: flex-end;
+    padding: 15px 0;
+    background: #393b40;
+}
+
+.close-btn {
+    width: 30px;
+    height: 30px;
+    margin-right: 30px;
+    border: 0;
+    background: transparent url(../../img/close.png) no-repeat center center;
+    background-size: cover;
+    cursor: pointer;
+}
+
+.model-lists-item {
+    text-align: center;
+    padding: 15px;
+    border-bottom: #f5f5f5 1px solid;
+    cursor: pointer;
+}
+
+.model-lists-item a {
+    color: #393b40;
+}
+
+.model-lists-item:hover {
+    background-color: #f4f6f7;
+}
+
+.header {
+    position: fixed;
+    height: 8vh;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color: rgba(17,17,17,0.75);
+    box-shadow: 0 3px 7px 0 rgb(0 0 0 / 35%);
+    z-index: 10;
+}
+
+.header-logo, .footer-logo {
+    width: 112px;
+    object-fit: cover;
+}
+
+.header-toggle {
+    display: none;
+    width: 30px;
+    height: 30px;
+    margin-right: 30px;
+    border: 0;
+    background: transparent url(../../img/menu.png) no-repeat center center;
+    background-size: cover;
+    cursor: pointer;
+}
+
+.menu-lists {
+    display: flex;
+    height: 100%;
+    flex-direction: row;
+    align-items: center;
+}
+
+.lists-item {
+    display: flex;
+    position: relative;
+}
+
+.lists-item a {
+    color: #ccc;
+    font-size: 14px;
+    line-height: 15px;
+    font-weight: 500;
+    letter-spacing: 3px;
+    position: relative;
+    padding: 15px 0;
+    margin: 0 23px;
+}
+
+.lists-item a:after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: block;
+    background-color: rgb(105, 224, 255);
+    height: 2px;
+    opacity: 0;
+    transform: translateY(2px);
+    transition: .3s ease all;
+}
+
+.lists-item a.active::after {
+    opacity: 1;
+    transform: translateY(-3px);
+}
+
+.lists-item a:hover:after {
+    opacity: 1;
+    transform: translateY(-3px);
+}
+
+.lists-item .active {
+    text-shadow: 0 0 10px #69e0ff, 0 0 20px #69e0ff, 0 0 40px #69e0ff;
+    color: #fff;
+}
+
+.lists-item a:hover {
+    text-shadow: 0 0 10px #69e0ff, 0 0 20px #69e0ff, 0 0 40px #69e0ff;
+    color: #fff;
+}

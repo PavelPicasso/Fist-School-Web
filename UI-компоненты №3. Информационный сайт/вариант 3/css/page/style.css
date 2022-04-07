@@ -1,0 +1,148 @@
+@media (max-width: 1200px) {
+    .carousel-info, .info {
+        width: 440px;
+    }
+
+    .swiper-button-prev, .swiper-button-next {
+        display: none;
+    }
+
+    .news-main {
+        padding: 0 24px;
+    }
+}
+
+@media (max-width: 980px) {
+    .poster-download {
+        display: none;
+    }
+    
+    .button-wrap-signup {
+        display: block;
+    }
+
+    .news {
+        height: 100%;
+        padding-bottom: 60px;
+    }
+
+    .news h3 {
+        margin: 70px 0 30px;
+    }
+
+    .news-main {
+        flex-direction: column;
+    }
+
+    .info {
+        width: 100%;
+        padding: 24px 0;
+    }
+
+    .char-1, .char-2, .char-3 {
+        margin: 0;
+    }
+
+    .footer-top ul {
+        margin: 0;
+        justify-content: center;
+    }
+}
+
+@media (max-width: 800px) {
+    .footer-top {
+        padding: 10px;
+    }
+
+    .footer-top ul {
+        flex-wrap: wrap;
+    }
+}
+
+
+@media (max-width: 650px) {
+    .header {
+        background-color: transparent;
+        box-shadow: none;
+        justify-content: flex-end;
+        align-items: center;
+    }
+    
+    .header-logo {
+        display: none;
+    }
+    
+    .header-toggle {
+        display: block;
+    }
+
+    .menu {
+        display: none;
+    }
+
+    .logo-show {
+        display: block;
+        margin-top: 10vh;
+        max-width: 300px;
+        height: auto;
+        width: 100%;
+    }
+    
+    .home {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        height: 100vh;
+        background: #fff url(../../img/home-bg.jpg) no-repeat center top;
+        background-size: cover;
+    }
+
+    .first-video {
+        display: none;
+    }
+
+    .poster-sign {
+        bottom: 70px;
+    }
+
+    .poster-sub {
+        display: none;
+    }
+
+    .news {
+        padding: 0;
+    }
+
+    .news-main {
+        width: 100%;
+        padding: 30px;
+    }
+
+    .carousel-info {
+        width: 100%;
+        height: 100%;
+    }
+
+    .city-list-char {
+        justify-content: normal;
+    }
+
+    .footer-top {
+        height: 100px;
+    }
+
+    .footer-main {
+        padding: 30px 20px;
+        font-size: 10px;
+    }
+}
+
+@media (max-width: 420px) {
+    .city-list-char img {
+        display: none;
+    }
+
+    .social-item {
+        margin-right: 12px !important;
+    }
+}

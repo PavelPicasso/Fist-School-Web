@@ -1,0 +1,80 @@
+html {
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'Noto Sans', sans-serif;
+	font-weight: 400;
+}
+
+*, 
+*::before, 
+*::after {
+	box-sizing: inherit;
+}
+
+h1,
+h2,
+h3,
+p,
+ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+a {
+	text-decoration: none;
+	color: inherit;
+}
+
+.disable-scroll {
+	position: relative;
+	overflow: hidden;
+	height: 100vh;
+	position: fixed;
+	left: 0;
+	top: 0;
+	width: 100%;
+}
+
+
+/*
+    Скроллбар
+*/
+
+::-webkit-scrollbar-button {
+    background-image: url(''); 
+    background-repeat: no-repeat;
+    width: 0px;
+    height: 0px
+}
+
+::-webkit-scrollbar-track {
+    background-color: #333;
+}
+
+::-webkit-scrollbar-thumb {
+    -webkit-border-radius: 5px;
+    background-color: #69e0ff;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: #05cdff;
+}
+
+::-webkit-scrollbar-corner {
+    background-repeat: no-repeat;
+}
+
+::-webkit-resizer {
+    background-image: url('');
+    background-repeat: no-repeat;
+    width: 6px;
+    height: 6px;
+}
+
+::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+}

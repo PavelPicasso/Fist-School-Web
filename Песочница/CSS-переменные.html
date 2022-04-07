@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        :root {
+            --padding: 20px;
+            --fz: 0.8rem;
+
+            --width: 500px;
+            --height: calc(var(--width) / (4/3));
+
+            --min: 16px;
+            --max: 72px;
+            --clamped-fz: clamp(var(--min), 2.5vw, var(--max));
+
+            --big-number: 10;
+
+            --style: circle;
+            --casing: uppercase;
+
+            --bg-img: url(https://i.imgflip.com/154sjp.jpg);
+            --bg-img-size: cover;
+
+            --color-text: #233742;
+            --color-links: #d80b77;
+            --color-bg: white;
+
+            --open: '(';
+            --close: ')';
+            --heading-hint: ' ' var(--open) 'this is a heading' var(--close);
+            --link-hint: ' ' var(--open) attr(href) var(--close);
+        }
+
+        body {
+            margin: 0;
+            font-size: 20px;
+        }
+
+        article {
+            padding: var(--padding);
+            font-size: var(--fz);
+            color: var(--color-text);
+        }
+
+        .block {
+            background-color: tomato;
+            width: var(--width);
+            height: var(--height);
+        }
+
+        .paragraph {
+            /* font-size: var(--clamped-fz); */
+            font-size: calc(var(--big-number) * 1px);
+        }
+
+        ul {
+            list-style-type: var(--style);
+            text-transform: var(--casing);
+        }
+
+        .banner {
+            display: block;
+            width: 300px;
+            height: 300px;
+            background-image: var(--bg-img);
+            background-size: var(--bg-img-size);
+        }
+
+        .link {
+            color: var(--color-links);
+        }
+
+        .content h1::after {
+            content: var(--heading-hint);
+        }
+
+        .content a::after {
+            content: var(--link-hint);
+        }
+    </style>
+
+</head>
+<body>
+    <article>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi officiis at facere aspernatur debitis non provident quis vitae, incidunt praesentium fuga ut explicabo dolorem nisi illo a quam, nesciunt libero.
+    </article>
+
+    <div class="block"> </div>
+
+    <p class="paragraph">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas unde nam consequatur non consequuntur, nobis rerum sequi? Quibusdam odit voluptate maxime voluptatem repudiandae, error velit tenetur repellat ducimus. Sit, reprehenderit.
+    </p>
+
+    <ul>
+        <li>item 1</li>
+        <li>item 2</li>
+    </ul>
+    
+    <a class="banner" href="#"></a>
+
+    <a class="link" href="#">link</a>
+
+    <div class="content">
+        <h1>Welcome!</h1>
+        <p>Have you seen <a class="qwerty" href="https://codersblock.com/">my site</a>? It's where I talk about CSS or whatever.</p>
+    </div>
+</body>
+</html>
